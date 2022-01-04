@@ -26,10 +26,32 @@
         />
 
     <EditText
+        android:id="@+id/edit_email"
         style="@style/Edit_text"
+        android:hint="@string/email"
+        android:drawableEnd="@drawable/ic_email"
         app:layout_constraintStart_toStartOf="@+id/containerComponents"
         app:layout_constraintEnd_toEndOf="@+id/containerComponents"
         app:layout_constraintTop_toTopOf="@id/containerComponents"
         />
+
+    <EditText
+        android:id="@+id/edit_password"
+        style="@style/Edit_text"
+        android:hint="@string/senha"
+        android:drawableEnd="@drawable/ic_eye"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_entrar"
+        style="@style/Button"
+        android:text="@string/entrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_password"
+       />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
