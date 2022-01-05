@@ -10,4 +10,5 @@
     <string name="edit_email">Email</string>
     <string name="edit_senha">Senha</string>
     <string name="btn_cadastrar">Cadastrar</string>
+    <string name="btn_deslogar">Deslogar</string>
 </resources>
