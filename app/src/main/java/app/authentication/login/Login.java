@@ -2,9 +2,14 @@ package app.authentication.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
+
+    TextView txt_tela_cadastro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -12,5 +17,18 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         getSupportActionBar().hide();
+
+        txt_tela_cadastro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login.this, Cadastro.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void startRegistrationScreen(){
+        txt_tela_cadastro = findViewById(R.id.txt_tela_cadastro);
+
     }
 }
