@@ -18,11 +18,11 @@ public class Login extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        startRegistrationScreen();
+        startLoginScreen();
 
     }
 
-    private void startRegistrationScreen(){
+    private void startLoginScreen(){
         txt_tela_cadastro = findViewById(R.id.txt_tela_cadastro);
 
         txt_tela_cadastro.setOnClickListener(new View.OnClickListener() {
