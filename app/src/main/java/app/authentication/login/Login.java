@@ -18,6 +18,13 @@ public class Login extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
+        startRegistrationScreen();
+
+    }
+
+    private void startRegistrationScreen(){
+        txt_tela_cadastro = findViewById(R.id.txt_tela_cadastro);
+
         txt_tela_cadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -25,10 +32,6 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-
-    private void startRegistrationScreen(){
-        txt_tela_cadastro = findViewById(R.id.txt_tela_cadastro);
 
     }
 }

@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">Login</string>
+
     <string name="entrar">Entrar</string>
     <string name="senha">Senha</string>
     <string name="email">Email</string>
     <string name="txt_cadastro">Crie uma conta clicando aqui</string>
     <string name="title_cadastro">Cadastre-se</string>
+    <string name="edit_nome">Nome</string>
+    <string name="edit_email">Email</string>
+    <string name="edit_senha">Senha</string>
+    <string name="btn_cadastrar">Cadastrar</string>
 </resources>
