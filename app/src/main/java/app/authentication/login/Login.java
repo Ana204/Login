@@ -102,6 +102,7 @@ public class Login extends AppCompatActivity {
         });
     }
 
+    //logged user verification
     @Override
     protected void onStart() {
         super.onStart();
