@@ -2,6 +2,7 @@ package app.authentication.login;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.DragStartHelper;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -18,6 +19,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.concurrent.ExecutionException;
 
@@ -98,6 +100,17 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        FirebaseUser currentUser =FirebaseAuth.getInstance().getCurrentUser();
+
+        if (currentUser != null){
+            PerfilScreen();
+        }
     }
 
     private void PerfilScreen(){
