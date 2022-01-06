@@ -63,14 +63,26 @@
         app:layout_constraintBottom_toBottomOf="@id/view_containerComponents"
         />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonCadastrar"
-        style="@style/Button"
-        android:layout_marginTop="40dp"
-        android:text="@string/btn_cadastrar"
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:indeterminateTint="@color/white"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view_containerComponents"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCadastrar"
+        style="@style/Button"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_cadastrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressbar"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -43,7 +43,7 @@
         android:id="@+id/txt_NomeUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nome do usuario"
+        android:text="@string/nome_do_usuario"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -68,7 +68,7 @@
         android:id="@+id/txt_emailUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email do usuario"
+        android:text="@string/email_do_usuario"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -79,6 +79,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_deslogar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"

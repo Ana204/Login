@@ -3,12 +3,15 @@ package app.authentication.login;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -30,6 +33,7 @@ public class Cadastro extends AppCompatActivity {
 
     EditText editNome, editEmail, editSenha;
     Button buttonCadastrar;
+    ProgressBar progressbar;
 
     String[] mensagens = {"Preencha todos os campos", "Cadastro realizado com sucesso"};
     String userID;
@@ -75,10 +79,21 @@ public class Cadastro extends AppCompatActivity {
 
                     SalveUserData();
 
+                    progressbar.setVisibility(View.VISIBLE);
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Intent intent = new Intent(Cadastro.this, Perfil.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                    },3000);
+
                     Snackbar snackbar = Snackbar.make(view, mensagens[1], Snackbar.LENGTH_LONG);
                     snackbar.setBackgroundTint(Color.WHITE);
                     snackbar.setTextColor(Color.BLACK);
                     snackbar.show();
+
                 }else {
                     String error;
 
@@ -138,5 +153,7 @@ public class Cadastro extends AppCompatActivity {
         editEmail = findViewById(R.id.editEmail);
         editSenha = findViewById(R.id.editSenha);
         buttonCadastrar = findViewById(R.id.buttonCadastrar);
+        progressbar = findViewById(R.id.progressbar);
+
     }
 }

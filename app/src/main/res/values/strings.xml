@@ -11,4 +11,6 @@
     <string name="edit_senha">Senha</string>
     <string name="btn_cadastrar">Cadastrar</string>
     <string name="btn_deslogar">Deslogar</string>
+    <string name="email_do_usuario">Email do usuario</string>
+    <string name="nome_do_usuario">Nome do usuario</string>
 </resources>
