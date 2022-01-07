@@ -21,4 +21,4 @@ This project has as its first instance a personal training, for my portfolio. Bu
 $ git clone https://github.com/Ana204/Login.git
 
 ### `Features`  <br>
-- **JAVA** - Java is a native android language. Nowadays, Java is the most used language for mobile development
+- **JAVA** ☕ Java is a native android language. Nowadays, Java is the most used language for mobile development
