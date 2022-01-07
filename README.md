@@ -16,3 +16,9 @@ This project has as its first instance a personal training, for my portfolio. Bu
 - The password must contain at least 6 characters according to validation, otherwise the user will be warned, <br>
 - If the user tries to register an existing account on FirebaseFirestore, the user will be warned, <br>
 - And finally, if the email or password is correct, the user is successfully registered in the database and redirected to the profile screen. 
+
+**Cloning the Repository**  <br>
+$ git clone https://github.com/Ana204/Login.git
+
+### `Features`  <br>
+- **JAVA** - Java is a native android language. Nowadays, Java is the most used language for mobile development
